@@ -1,10 +1,11 @@
 import './App.css';
+import { getPokemones } from "./data/pokemones";
+import Container from './components/Container';
 
 function App() {
+ 
   return (
-    <div className="App">
-      
-    </div>
+      <Container data={getPokemones()} title="Tengo que atraparlos!"/>
   );
 }
 
